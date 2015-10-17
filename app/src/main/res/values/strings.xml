@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">VolleyRot+</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="tPos1">1</string>
+    <string name="tPos2">2</string>
+    <string name="tPos3">3</string>
+    <string name="tPos4">4</string>
+    <string name="tPos5">5</string>
+    <string name="tPos6">6</string>
+    <string name="tBase">Base</string>
+    <string name="tReceive">Receive</string>
+    <string name="tServe">Serve</string>
+    <string name="tRotateCW">Rotate CW</string>
+    <string name="tRotateCCW">Rotate CCW</string>
+    <string name="show_players">Show Player Positions</string>
+    <string name="player_hint">Use Two Initials</string>
+    <string name="b_save">Save</string>
+    <string name="initScore">00</string>
+    <string name="them">Them:</string>
+    <string name="line">----------------------------------------------------</string>
+    <string name="add">+</string>
+    <string name="minus">-</string>
+    <string name="us">Us:</string>
+    <string name="section_title_1">Rotation</string>
+    <string name="section_title_2">ScoreBoard</string>
+    <string name="reset">Reset</string>
+    <string name="save">Save</string>
+    <string name="edit_players">Change Players</string>
+    <string name="rotation">Rotation</string>
+    <string name="scoreboard">ScoreBoard</string>
+
+
+
+</resources>

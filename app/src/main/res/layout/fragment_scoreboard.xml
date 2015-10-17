@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlScoreboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvThem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-10dp"
+        android:text="@string/them"
+        android:textSize="@dimen/score_team_font_size" />
+
+    <TextView
+        android:id="@+id/tvThemScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvThem"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        android:text="@string/initScore"
+        android:textSize="@dimen/score_font_size" />
+
+    <Button
+        android:id="@+id/bThemReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvThemScore"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reset" />
+
+    <View
+        android:id="@+id/score_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/bThemReset"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tvUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score_divider"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-10dp"
+        android:text="@string/us"
+        android:textSize="@dimen/score_team_font_size" />
+
+    <TextView
+        android:id="@+id/tvUsScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginRight="-10dp"
+        android:text="@string/initScore"
+        android:textSize="@dimen/score_font_size" />
+
+    <Button
+        android:id="@+id/bThemAdd"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvThem"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/tvThemScore"
+        android:layout_marginLeft="20dp"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/bThemMinus"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bThemAdd"
+        android:layout_alignBottom="@+id/bThemAdd"
+        android:layout_toLeftOf="@+id/tvThemScore"
+        android:layout_marginRight="20dp"
+        android:text="@string/minus" />
+
+    <Button
+        android:id="@+id/bUsAdd"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bThemAdd"
+        android:layout_below="@id/tvUs"
+        android:layout_marginTop="40dp"
+        android:text="@string/add" />
+
+    <Button
+        android:id="@+id/bUsMinus"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bUsAdd"
+        android:layout_alignBottom="@+id/bUsAdd"
+        android:layout_alignRight="@id/bThemMinus"
+        android:layout_toLeftOf="@+id/tvUsScore"
+        android:text="@string/minus" />
+
+    <Button
+        android:id="@+id/bUsReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvUsScore"
+        android:text="@string/reset" />
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llfrontrow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="75" >
+
+        <TextView
+            android:id="@+id/tvPos4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:text="@string/tPos4"
+            android:textSize="@dimen/font_size" />
+
+
+        <TextView
+            android:id="@+id/tvPos3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:text="@string/tPos3"
+            android:textSize="@dimen/font_size" />
+
+        <TextView
+            android:id="@+id/tvPos2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:text="@string/tPos2"
+            android:textSize="@dimen/font_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llbackrow"
+        android:layout_below="@id/llfrontrow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="75" >
+
+        <TextView
+            android:id="@+id/tvPos5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:text="@string/tPos5"
+            android:textSize="@dimen/font_size" />
+
+        <TextView
+            android:id="@+id/tvPos6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:text="@string/tPos6"
+            android:textSize="@dimen/font_size" />
+
+        <TextView
+            android:id="@+id/tvPos1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:gravity="center"
+            android:text="@string/tPos1"
+            android:textSize="@dimen/font_size" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/rot_fixed_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/llbackrow"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rot_fixed_divider"
+        android:layout_marginTop="20dp"
+        android:weightSum="50" >
+
+        <Button
+            android:id="@+id/bRotateCCW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="@string/tRotateCCW"
+            android:textSize="@dimen/br_font_size" />
+
+        <Button
+            android:id="@+id/bRotateCW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="@string/tRotateCW"
+            android:textSize="@dimen/br_font_size" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bEditPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/edit_players" />
+
+</RelativeLayout>
